@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="column _75"> <h1>Блог Лего и Хот Вилс</h1>Данный блог это сборник различных обзоров, видео и многого другого для машинок хот вилс и Лего</div> 
+
+<div class="column _25">сюда надо что-то добавить!</div>
+  </div>
+  <div class="row">
+
+    <div class="column _100"><h2>Последнии статьи блога</h2>
+        {% for post in site.posts %}
+    <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+    {% endfor %}
+    </div>
+  </div>
+  <div class="row">
+
+        <div class="column _100"><h2>Обзоры игрушек</h2>
+        
+        </div>
+  </div>
+  <div class="row">
+
+        <div class="column _100">
+            
+            <h2>Последние видео на Youtube канале</h2>
+            <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/9zZMiq10HCQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p>
+            <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/yuyOIseH5xY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+        
+        </div>
+        
+        
+    </div>

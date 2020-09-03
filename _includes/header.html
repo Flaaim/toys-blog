@@ -1,0 +1,17 @@
+
+
+<section class="navigation">
+    <div class="nav-container">
+          <div class="brand">
+            <a href="{{ site.url }}"><i class="fas fa-flag-checkered"></i></a>
+          </div>
+    <nav>
+        <ul class="nav-list">
+            {% for page in site.pages %} {% if page.title %}
+            <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %} {% endfor %}
+            <li><a href="{{ "/blog" | prepend: site.baseurl }}">Блог</a></li>
+        </ul>
+    </nav>
+    </div>
+</section>
