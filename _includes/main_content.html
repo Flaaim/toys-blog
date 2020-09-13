@@ -3,7 +3,7 @@
     <div class="column _75"><h2>Последнии статьи блога</h2>
         {% for post in site.posts %}
     <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
-    {% endfor %}
+    
     </div>
     
     <div class="column _30">
@@ -18,7 +18,7 @@
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
 </div>
-    </div>
+    </div>{% endfor %}
   </div>
   <div class="row">
 
