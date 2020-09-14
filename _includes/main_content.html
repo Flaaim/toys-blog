@@ -1,5 +1,4 @@
 
-
     <div class="blog_posts"><h2>Последнии статьи блога</h2>
         {% for post in site.posts %}<div class="row">
     
@@ -10,33 +9,6 @@
     </div>
 
     <div class="column _30"> 
-
-<div class="row">
-
-    <div class="column _75"><h2>Последнии статьи блога</h2>
-        {% for post in site.posts %}
-    <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
-    
-    </div>
-    
-    <div class="column _30">
-    <div class="post-categories">
-  {% if post %}
-    {% assign categories = post.categories %}
-  {% else %}
-    {% assign categories = page.categories %}
-  {% endif %}
-  {% for category in categories %}
-  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-  {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}
-</div>
-    </div>{% endfor %}
-  </div>
-  <div class="row">
-
-        <div class="column _100"><h2>Хот Вилс (Hot Wheels)</h2>
-
         
             {% if post %}
               {% assign categories = post.categories %}
@@ -122,6 +94,4 @@
         
         
     </div>
-
     </div>
-
