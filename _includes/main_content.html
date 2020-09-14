@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+
+    <div class="blog_posts"><h2>Последнии статьи блога</h2>
+        {% for post in site.posts %}<div class="row">
+    
+    <div class="column _70">
+       
+    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    
+    </div>
+
+    <div class="column _30"> 
+=======
 <div class="row">
 
     <div class="column _75"><h2>Последнии статьи блога</h2>
@@ -23,18 +36,93 @@
   <div class="row">
 
         <div class="column _100"><h2>Хот Вилс (Hot Wheels)</h2>
+>>>>>>> a6f93035b1f1c55e637cad46b08e8d2b93663ceb
         
-        </div>
-  </div>
+            {% if post %}
+              {% assign categories = post.categories %}
+            {% else %}
+              {% assign categories = page.categories %}
+            {% endif %}
+            {% for category in categories %}
+            <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+            {% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}
+          
+    </div>
+    
+  </div>{% endfor %}
+</div>
+
+
+  <div class="blog_posts"><h2>Хот Вилс (Hot Wheels)</h2>
+    {% for post in site.posts.HW %}<div class="row">
+     
+      <div class="column _70">
+          
+      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      
+      </div>
+  
+      <div class="column _30"> 
+          
+              {% if post %}
+                {% assign categories = post.categories %}
+              {% else %}
+                {% assign categories = page.categories %}
+              {% endif %}
+              {% for category in categories %}
+              <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+              {% unless forloop.last %}&nbsp;{% endunless %}
+              {% endfor %}
+            
+      </div>
+      
+    </div>{% endfor %}</div>
+
+    <div class="blog_posts"><h2>Лего (Lego)</h2>
+        {% for post in site.categories.Lego %}   <div class="row">
+         
+          <div class="column _70">
+             
+          <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+          
+          </div>
+      
+          <div class="column _30"> 
+              
+                  {% if post %}
+                    {% assign categories = post.categories %}
+                  {% else %}
+                    {% assign categories = page.categories %}
+                  {% endif %}
+                  {% for category in categories %}
+                  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+                  {% unless forloop.last %}&nbsp;{% endunless %}
+                  {% endfor %}
+                
+          </div>
+          
+        </div>{% endfor %}</div>
+
+        <div class="blog_posts"> <h2>Youtube видео</h2>
   <div class="row">
 
-        <div class="column _100">
-            
-            <h2>Последние видео на Youtube канале</h2>
-            <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/9zZMiq10HCQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p>
+        <div class="column _50">
+            <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/9zZMiq10HCQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p></div>
+        <div class="column _50">
             <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/yuyOIseH5xY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+        
+        </div>
+    </div>
+    <div class="row">
+        <div class="column _50">
+            <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/A0XOV8Xw8CE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
         
         </div>
         
         
     </div>
+<<<<<<< HEAD
+    </div>
+=======
+>>>>>>> a6f93035b1f1c55e637cad46b08e8d2b93663ceb

@@ -15,7 +15,7 @@ body {
 
 
   @media screen and (min-width: 800px) {
-    .row {
+    .row, .relatedPosts {
         margin-top:30px;
         display: flex;
         flex-direction: row;
@@ -32,20 +32,55 @@ body {
 
         }
 
-        ._75 {
-            flex: 7.5;
+        ._70 {
+            flex: 7.0;
         }
-        ._25 {
-            flex: 2.5;
+        
+        ._30 {
+            flex: 3.0;
+            line-height: 66.53px;
+            text-align: right;
+            
         }
-        ._100 {
-            flex: 10;
+        ._30 a{
+          text-decoration: none;
+          padding: 10px 10px;
+          border: 1px solid;
+          border-radius: 10px; 
+        }
+        ._30 a:hover {
+          color: $nav-font-color;
+          background-color: $nav-background;
+          border-color: $nav-font-color;
+        }
+        ._50 {
+          flex: 5;
+          padding: 0px 10px;
+        }
+        .column_related_posts {
+          flex: 2.5;
+          width: 200px;
+          padding: 0px 10px;
+        }
+        .column_related_posts img {
+          width: 200px;
         }
     }
 
+    .column_related_posts {
+      flex: 2.5;
+      padding: 0px 10px;
+    }
+    
       main {
         max-width: $content-width;
         margin: 0 auto;
         padding: 0px 10px;
+      }
+
+      .blog_posts h2 {
+        color: #0000ee;
+        border-bottom: 1px solid;
+        border-color: #0000ee;
       }
 
