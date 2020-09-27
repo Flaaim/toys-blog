@@ -38,7 +38,7 @@ categories: [Lego, Lego city]
 ## Фото монстр трака
 ![Набор лего сити монстр трак](http://toys-blog.ru/assets/img/IMG_20200914_113939.jpg)
 ## Сборка монстр трака
-[![Лего сити монстр трак сборка конструктора](https://img.youtube.com/vi/9zZMiq10HCQ/0.jpg)](https://www.youtube.com/watch?v=vfB4Gl5sJ5k)
+[![Лего сити монстр трак сборка конструктора](https://img.youtube.com/vi/9zZMiq10HCQ/0.jpg)](https://www.youtube.com/watch?vfB4Gl5sJ5k)
 На своем ютуб канале я смонтировал видео по сборке данного набора. Если у вас по какой либо причине отсутствует инструкция, вы можете посмотреть данное видео.
 
 ## Заключение
